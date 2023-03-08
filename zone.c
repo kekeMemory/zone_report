@@ -207,7 +207,7 @@ int main(void) {
 
   ret = zoned_device_open("/dev/nvme0n1",fd);
   printf("Finish calling zoned_device_open,zones: %d\n",fd->info.nr_zones);
-  //printf("ret is: %d\n",ret);
+  printf("ret is: %d\n",ret);
   struct zbd_info *info = &fd->info;
 
   assert(NULL != info);
